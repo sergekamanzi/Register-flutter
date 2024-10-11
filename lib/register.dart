@@ -12,7 +12,7 @@ class RegisterPage extends StatelessWidget {
             children: [
               // Green background with a fixed height
               Container(
-                height: 380, // Fixed height for the green section
+                height: 350, // Fixed height for the green section
                 color: Color(0xFF004D40), // Dark green background
                 width: double.infinity,
                 child: Column(
@@ -55,7 +55,8 @@ class RegisterPage extends StatelessWidget {
                     // Sign Up button
                     ElevatedButton(
                       onPressed: () {
-                        // Perform sign-up logic here
+                        // When the user clicks SIGN UP, navigate to the LoginPage
+                      
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Color(0xFF004D40), // Dark green button
@@ -91,6 +92,23 @@ class RegisterPage extends StatelessWidget {
                       ],
                     ),
                     SizedBox(height: 24),
+
+                    // Already have an account
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text('Have an account?'),
+                        TextButton(
+                          onPressed: () {
+                            
+                          },
+                          child: Text(
+                            'SIGN IN',
+                            style: TextStyle(color: Color(0xFF004D40)),
+                          ),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),

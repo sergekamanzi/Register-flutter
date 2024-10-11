@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'welcome.dart'; // Import WelcomeScreen for navigation
 import 'register.dart'; // Import RegisterPage for navigation
 
 void main() {
@@ -27,9 +26,8 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData.light(), // Light theme
       darkTheme: ThemeData.dark(), // Dark theme
       themeMode: _themeMode, // Switch between dark and light mode
-      initialRoute: '/welcome', // Initial route set to the WelcomeScreen
+      initialRoute: '/register', // Initial route set to the RegisterPage
       routes: {
-        '/welcome': (context) => WelcomeScreen(), // Route for WelcomeScreen
         '/register': (context) => RegisterPage(), // Route for RegisterPage
       },
     );
